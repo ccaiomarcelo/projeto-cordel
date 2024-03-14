@@ -1,0 +1,100 @@
+@charset "UTF-8";
+ 
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Jost';
+    --fonte3: 'Kalam';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+header > h1 {
+    font-size: 3em;
+    font-family: var(--fonte2);
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-size: 2.1em;
+    font-family: var(--fonte3);
+    font-weight: 500;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+section > p {
+    padding-bottom: 1.7em;
+}
+
+section.padrao {
+    background-color: #fff;
+    color: black;
+}
+
+section.imagem {
+    text-shadow: 1px 1px 0px black;
+    background-color: blue;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.603);
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    padding: 10px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+
+section#img01 {
+    background-size: cover;
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-size: cover;
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
